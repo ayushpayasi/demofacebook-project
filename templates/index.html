@@ -1,0 +1,13 @@
+<h1>enjoy</h1>
+{% load socialaccount %}
+{% providers_media_js%}
+<html>
+    <head>
+<title></title>
+
+    </head>
+    <body>
+{{ user }}
+        <a href="{% provider_login_url 'facebook' method='js_sdk'%}"> facebook connect </a>
+    </body>
+    </html>
